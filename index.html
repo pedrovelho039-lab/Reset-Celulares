@@ -8,51 +8,64 @@
 <style>
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background: #0f172a;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
     color: white;
     text-align: center;
 }
 
 header {
-    background: #16a34a;
-    padding: 20px;
+    padding: 40px 20px;
 }
 
 h1 {
-    margin: 0;
+    font-size: 32px;
+    margin-bottom: 10px;
 }
 
-section {
-    padding: 30px 20px;
+p {
+    opacity: 0.8;
+}
+
+.container {
+    padding: 20px;
 }
 
 .card {
-    background: #1e293b;
-    margin: 15px auto;
-    padding: 20px;
-    border-radius: 10px;
-    max-width: 400px;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 25px;
+    margin: 20px auto;
+    max-width: 420px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.03);
 }
 
 button {
-    background: #16a34a;
+    margin-top: 15px;
+    background: #22c55e;
     border: none;
-    padding: 12px 20px;
-    color: white;
+    padding: 14px 25px;
     font-size: 16px;
-    border-radius: 5px;
+    color: white;
+    border-radius: 8px;
     cursor: pointer;
+    transition: 0.3s;
 }
 
 button:hover {
-    background: #22c55e;
+    background: #16a34a;
 }
 
 footer {
-    background: #111827;
-    padding: 15px;
-    margin-top: 20px;
+    margin-top: 40px;
+    padding: 20px;
+    opacity: 0.6;
 }
 </style>
 </head>
@@ -60,43 +73,45 @@ footer {
 <body>
 
 <header>
-    <h1>Reset Celulares</h1>
+    <h1>📱 Reset Celulares</h1>
     <p>Assistência Técnica Especializada</p>
 </header>
 
-<section>
-    <div class="card">
-        <h2>📱 Consertos</h2>
-        <p>Troca de tela</p>
-        <p>Troca de bateria</p>
-        <p>Formatação</p>
-        <p>Atualização de software</p>
-    </div>
+<div class="container">
 
-    <div class="card">
-        <h2>🖨️ Serviços</h2>
-        <p>Impressões</p>
-        <p>Xerox</p>
-        <p>2ª via de contas</p>
-    </div>
+<div class="card">
+<h2>🔧 Consertos</h2>
+<p>Troca de tela</p>
+<p>Troca de bateria</p>
+<p>Formatação</p>
+<p>Atualização de software</p>
+</div>
 
-    <div class="card">
-        <h2>📍 Localização</h2>
-        <p>Vila da Paz</p>
-    </div>
+<div class="card">
+<h2>🖨 Serviços</h2>
+<p>Impressões</p>
+<p>Xerox</p>
+<p>2ª via de contas</p>
+</div>
 
-    <div class="card">
-        <h2>📞 Contato</h2>
-        <p>WhatsApp: 98 98516-0784</p>
-        <button onclick="window.location.href='https://wa.me/5598985160784'">
-            Falar no WhatsApp
-        </button>
-    </div>
-</section>
+<div class="card">
+<h2>📍 Localização</h2>
+<p>Vila da Paz</p>
+</div>
+
+<div class="card">
+<h2>📞 Contato</h2>
+<p>WhatsApp: 98 98516-0784</p>
+<button onclick="window.location.href='https://wa.me/5598985160784'">
+Falar no WhatsApp
+</button>
+</div>
+
+</div>
 
 <footer>
-    © 2026 Reset Celulares - Todos os direitos reservados
+© 2026 Reset Celulares
 </footer>
 
 </body>
-  </html>
+</html>
